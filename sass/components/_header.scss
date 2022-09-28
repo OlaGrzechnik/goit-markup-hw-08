@@ -1,0 +1,128 @@
+/*.header {
+  border-bottom: 1px solid #ececec;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.top-links__list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.top-links__item {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.top-links a {
+  color: #757575;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+    transition: $transition;
+  }
+}
+
+.nav {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 46px;
+  margin-left: 93px;
+
+  & a {
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    &:visited {
+      color: black;
+      text-decoration: none;
+    }
+    &:hover,
+    &:focus {
+      color: $blue;
+      transition: $transition;
+    }
+  }
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover svg,
+  &:focus svg {
+    fill: $blue;
+    transition: $transition;
+  }
+
+  &__envelope-icon {
+    width: 16px;
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
+    &:hover svg,
+    &:focus svg {
+      fill: $blue;
+      transition: $transition;
+    }
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover svg,
+  &:focus svg {
+    fill: $blue;
+    transition: $transition;
+  }
+
+  &__phone-icon {
+    height: 16px;
+    width: 10px;
+    fill: #757575;
+    margin-right: 10px;
+    &:hover,
+    &:focus svg {
+      fill: $blue;
+      transition: $transition;
+    }
+  }
+}
+*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    max-width: 480px;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 480px;
+    height: 60px;
+    background-color: #ffffff;
+  }
+  .nav {
+    display: none;
+  }
+  .mail {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+}

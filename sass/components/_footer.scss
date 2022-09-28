@@ -1,0 +1,107 @@
+.footer {
+  color: white;
+  background-color: #2f303a;
+  margin-top: 94px;
+
+  &__flex {
+    display: flex;
+    gap: 70px;
+    align-items: top;
+  }
+}
+
+.contact-bottom {
+  font-style: normal;
+  padding-bottom: 60px;
+  text-align: left;
+
+  &__address {
+    font-style: normal;
+    text-align: left;
+    margin-top: 0;
+    font-size: 14px;
+  }
+  &__links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    &:hover {
+      color: $blue;
+      transition: $transition;
+    }
+  }
+}
+
+.contacts {
+  list-style-type: none;
+
+  &__item {
+    padding-top: 9px;
+    font-size: 14px;
+  }
+}
+
+.joinus {
+  padding-top: 72px;
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.newsletter {
+  padding-top: 72px;
+
+  &__signin {
+    display: inline-flex;
+    gap: 12px;
+  }
+
+  &__input {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    &:focus {
+      transition: $transition;
+      outline: 0;
+      border: 1px solid $blue;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 42px;
+    background-color: $blue;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-size: 16px;
+  }
+  &__send-icon {
+    position: absolute;
+    left: 148px;
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footerflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,35 @@
+.about {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    text-align: center;
+    padding-bottom: 94px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__subtitle {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    top: 224px;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 27px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    font-size: 28px;
+    margin-bottom: 30px;
+    max-width: 480px;
+  }
+}
