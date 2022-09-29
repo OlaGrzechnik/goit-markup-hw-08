@@ -35,10 +35,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 480px;
+    max-width: 100%;
+    justify-content: center;
 
     &__item {
-      flex-basis: calc((100% - 30px) / 2);
+      max-width: 210px;
+      flex-basis: calc(100% / 2);
     }
 
     &__box {

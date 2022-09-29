@@ -5,9 +5,9 @@
 .blue {
   color: $blue;
 }
-body {
+/*body {
   width: 1600px;
-}
+}*/
 @media scereen and (min-width: 320px) and (max-width: 787px) {
   .body {
     font-family: "roboto", "Raleway", sans-serif;
@@ -15,4 +15,9 @@ body {
     color: #212121;
     width: 480px;
   }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
