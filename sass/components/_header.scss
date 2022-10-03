@@ -106,6 +106,14 @@
   .header {
     border-bottom: 1px solid #ececec;
     max-width: 100%;
+    &__menu24px {
+      width: 24px;
+      height: 24px;
+    }
+    &__menu24px-icon {
+      width: 24px;
+      height: 24px;
+    }
   }
   .top {
     display: flex;
