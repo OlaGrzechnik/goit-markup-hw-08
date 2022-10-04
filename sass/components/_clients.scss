@@ -33,40 +33,37 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .client-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-    max-width: 100%;
+    justify-content: space-around;
+  }
+  &__item {
+    flex-basis: calc(100% / 2);
+    max-width: 210px;
+  }
+
+  &__box {
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 
-    &__item {
-      max-width: 210px;
-      flex-basis: calc(100% / 2);
+    &:hover,
+    &:focus {
+      border: 1px solid $blue;
+      transition: $transition;
     }
-
-    &__box {
-      max-width: 210px;
-      height: 92px;
-      border: 1px solid rgba(175, 177, 184, 1);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover,
-      &:focus {
-        border: 1px solid $blue;
-        transition: $transition;
-      }
-      &:hover svg,
-      &:focus svg {
-        fill: $blue;
-        transition: $transition;
-      }
+    &:hover svg,
+    &:focus svg {
+      fill: $blue;
+      transition: $transition;
     }
-    &__icon {
-      width: 80px;
-      height: 45px;
-      fill: #afb1b8;
-    }
+  }
+  &__icon {
+    width: 80px;
+    height: 45px;
+    fill: #afb1b8;
   }
 }
