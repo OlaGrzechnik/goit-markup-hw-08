@@ -35,35 +35,38 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  &__item {
-    flex-basis: calc(100% / 2);
-    max-width: 210px;
-  }
+    justify-content: space-between;
+    gap: 30px;
 
-  &__box {
-    height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__item {
+      flex-basis: 46.66%;
+      max-width: 210px;
+    }
 
-    &:hover,
-    &:focus {
-      border: 1px solid $blue;
-      transition: $transition;
+    &__box {
+      height: 92px;
+      border: 1px solid rgba(175, 177, 184, 1);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 210px;
+
+      &:hover,
+      &:focus {
+        border: 1px solid $blue;
+        transition: $transition;
+      }
+      &:hover svg,
+      &:focus svg {
+        fill: $blue;
+        transition: $transition;
+      }
     }
-    &:hover svg,
-    &:focus svg {
-      fill: $blue;
-      transition: $transition;
+    &__icon {
+      width: 80px;
+      height: 45px;
+      fill: #afb1b8;
     }
-  }
-  &__icon {
-    width: 80px;
-    height: 45px;
-    fill: #afb1b8;
   }
 }

@@ -56,11 +56,11 @@
   left: 85%;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 50%;
+  border: none;
   outline: none;
   &:hover,
   &:focus {
-    background-color: #2196f3;
+    fill: #2196f3;
   }
 }
 

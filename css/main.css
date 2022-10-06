@@ -61,24 +61,15 @@ main {
 
 .container {
   min-width: 320px;
+  max-width: 480px;
   display: flex;
   align-content: center;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-} /*
-@media screen and (min-width: 320px) and (max-width: 767px); {
-  .container {
-    max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0;
-    align-items: center;
-  }
 }
 
-/*
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
     padding-left: 15px;
@@ -93,14 +84,36 @@ main {
     align-content: center;
   }
 }
-*/
-.section {
-  padding-top: 94px;
+/*
+@media screen and (min-width: 320px) and (max-width: 767px); {
+  .container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/*
+
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-content: center;
+  }
+}
+*/
+.section {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
+    padding-top: 94px;
   }
 }
 /*.logo-top a:link {
@@ -387,6 +400,139 @@ main {
   transform: translate(-50%, -50%);
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+.form a {
+  color: #2196f3;
+  font-size: 12px;
+}
+.form__label {
+  display: block;
+  position: relative;
+  color: rgb(117, 117, 117);
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.2;
+  height: 88px;
+}
+.form__input--name, .form__input--phone, .form__input--email {
+  width: 370px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 42px;
+}
+.form__input--name:focus, .form__input--phone:focus, .form__input--email:focus {
+  outline-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input--name__input--name-svg, .form__input--name__input--phone-svg, .form__input--name__input--email-svg, .form__input--phone__input--name-svg, .form__input--phone__input--phone-svg, .form__input--phone__input--email-svg, .form__input--email__input--name-svg, .form__input--email__input--phone-svg, .form__input--email__input--email-svg {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  fill: #212121;
+  width: 13px;
+  height: 15px;
+}
+.form__input--name__input--name:focus + .form__input--name__input--name-svg, .form__input--name__input--phone:focus + .form__input--name__input--phone-svg, .form__input--name__input--email:focus + .form__input--name__input--email-svg, .form__input--name__input--name:focus + .form__input--phone__input--name-svg, .form__input--name__input--phone:focus + .form__input--phone__input--phone-svg, .form__input--name__input--email:focus + .form__input--phone__input--email-svg, .form__input--name__input--name:focus + .form__input--email__input--name-svg, .form__input--name__input--phone:focus + .form__input--email__input--phone-svg, .form__input--name__input--email:focus + .form__input--email__input--email-svg, .form__input--phone__input--name:focus + .form__input--name__input--name-svg, .form__input--phone__input--phone:focus + .form__input--name__input--phone-svg, .form__input--phone__input--email:focus + .form__input--name__input--email-svg, .form__input--phone__input--name:focus + .form__input--phone__input--name-svg, .form__input--phone__input--phone:focus + .form__input--phone__input--phone-svg, .form__input--phone__input--email:focus + .form__input--phone__input--email-svg, .form__input--phone__input--name:focus + .form__input--email__input--name-svg, .form__input--phone__input--phone:focus + .form__input--email__input--phone-svg, .form__input--phone__input--email:focus + .form__input--email__input--email-svg, .form__input--email__input--name:focus + .form__input--name__input--name-svg, .form__input--email__input--phone:focus + .form__input--name__input--phone-svg, .form__input--email__input--email:focus + .form__input--name__input--email-svg, .form__input--email__input--name:focus + .form__input--phone__input--name-svg, .form__input--email__input--phone:focus + .form__input--phone__input--phone-svg, .form__input--email__input--email:focus + .form__input--phone__input--email-svg, .form__input--email__input--name:focus + .form__input--email__input--name-svg, .form__input--email__input--phone:focus + .form__input--email__input--phone-svg, .form__input--email__input--email:focus + .form__input--email__input--email-svg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.form__close-btn:hover {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__close-btn:hover svg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  margin-bottom: 12px;
+}
+.form__close-svg {
+  fill: rgb(0, 0, 0);
+  position: relative;
+  top: 2px;
+  height: 18px;
+  width: 18px;
+}
+.form__textarea {
+  width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  letter-spacing: 1%;
+  resize: none;
+  margin-bottom: 20px;
+}
+.form__textarea:focus {
+  outline-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__sendbutton {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+  border: 0;
+  cursor: pointer;
+}
+.form__policies {
+  font-size: 14px;
+}
+.form__policies::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(33, 33, 33);
+  border-radius: 4px;
+  position: absolute;
+  left: 55px;
+  bottom: 142px;
+}
+
+.policies-checkbox {
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.policies-checkbox:checked + .form__policies::before {
+  background-color: #2196f3;
+  border: 1px solid white;
+  background-image: url(../images/tick.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*.form {
@@ -886,13 +1032,12 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
-    justify-content: center;
-    min-width: 100% .client-list __item;
-    min-width-flex-basis: 50%;
-    min-width-margin-right: 20px;
-    min-width-margin-bottom: 20px;
-    min-width-max-width: 210px;
+  }
+  .client-list__item {
+    flex-basis: 46.66%;
+    max-width: 210px;
   }
   .client-list__box {
     height: 92px;
@@ -901,6 +1046,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 210px;
   }
   .client-list__box:hover, .client-list__box:focus {
     border: 1px solid #2196f3;
@@ -1123,7 +1269,7 @@ main {
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-right: 15px;
     margin-bottom: 40px;
   }
@@ -1136,6 +1282,7 @@ main {
     border-radius: 4px;
     line-height: 26px;
     padding: 6px 22px 6px 22px;
+    margin-bottom: 15px;
   }
   .portfolio__button:hover, .portfolio__button:focus {
     background-color: #2196f3;
@@ -1355,11 +1502,11 @@ main {
   left: 85%;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 50%;
+  border: none;
   outline: none;
 }
 .menu-toggle:hover, .menu-toggle:focus {
-  background-color: #2196f3;
+  fill: #2196f3;
 }
 
 .address-mob-menu {
