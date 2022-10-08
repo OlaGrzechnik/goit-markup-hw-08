@@ -1,22 +1,23 @@
-/*.client-list {
-  display: inline-flex;
+.client-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 30px;
-  width: 1170px;
 
-  &__icon {
-    width: 106px;
-    height: 60px;
-    fill: #afb1b8;
+  &__item {
+    flex-basis: 46.66%;
+    max-width: 210px;
   }
 
   &__box {
     height: 92px;
-    width: 170px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 210px;
 
     &:hover,
     &:focus {
@@ -29,44 +30,44 @@
       transition: $transition;
     }
   }
-}*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .client-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
+  &__icon {
+    width: 80px;
+    height: 45px;
+    fill: #afb1b8;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-list {
     &__item {
-      flex-basis: 46.66%;
-      max-width: 210px;
+      flex-basis: 33.33%;
+      max-width: 226px;
+    }
+    &__box {
+      max-width: 226px;
+    }
+    &__icon {
+      width: 106px;
+      height: 60px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: inline-flex;
+    gap: 30px;
+    width: 1170px;
+    &__item {
+      max-width: 170px;
     }
 
     &__box {
       height: 92px;
-      border: 1px solid rgba(175, 177, 184, 1);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 210px;
-
-      &:hover,
-      &:focus {
-        border: 1px solid $blue;
-        transition: $transition;
-      }
-      &:hover svg,
-      &:focus svg {
-        fill: $blue;
-        transition: $transition;
-      }
+      width: 170px;
     }
     &__icon {
-      width: 80px;
-      height: 45px;
-      fill: #afb1b8;
+      width: 106px;
+      height: 60px;
     }
   }
 }

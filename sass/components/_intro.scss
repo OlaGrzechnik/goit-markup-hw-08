@@ -1,31 +1,36 @@
-/*.intro {
+.intro {
   background-color: #2f303a;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/backgroundimage.jpg");
+    url("../images/mobile/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  margin: 0;
+  max-width: 100%;
+  height: 400px;
+  margin: 0 auto;
   text-align: center;
 
   &__banner {
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 200px 0 200px 0;
+    padding-top: 118px;
+    padding-right: 57px;
+    padding-bottom: 198px;
+    padding-left: 58px;
   }
   &__slogan {
-    width: 696px;
     text-align: center;
     color: white;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     justify-content: center;
+    line-height: 1.7;
+    letter-spacing: 6%;
   }
   &__button {
     background-color: $blue;
@@ -39,7 +44,7 @@
     cursor: pointer;
     border: 0;
     border-radius: 4px;
-    padding: 10px 22px 10px 22px;
+    padding: 10px 42px 10px 42px;
     &:hover,
     &:focus {
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -48,61 +53,17 @@
     }
   }
 }
-*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .intro {
-    background-color: #2f303a;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/mobile/header.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    text-align: center;
 
-    &__banner {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      padding-top: 118px;
-      padding-right: 57px;
-      padding-bottom: 198px;
-      padding-left: 58px;
-    }
+@media screen and (min-width: 1200px) {
+  .intro {
     &__slogan {
       text-align: center;
       color: white;
       font-weight: 900;
-      font-size: 26px;
+      font-size: 44px;
       justify-content: center;
       line-height: 1.7;
       letter-spacing: 6%;
-    }
-    &__button {
-      background-color: $blue;
-      color: white;
-      width: 200px;
-      height: 50px;
-      font-size: 16px;
-      font-weight: 700;
-      margin-top: 30px;
-      line-height: 1.88;
-      cursor: pointer;
-      border: 0;
-      border-radius: 4px;
-      padding: 10px 42px 10px 42px;
-      &:hover,
-      &:focus {
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        transition: $transition;
-      }
     }
   }
 }
