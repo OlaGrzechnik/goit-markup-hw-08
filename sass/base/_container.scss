@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -23,5 +23,6 @@
     padding-left: 15px;
     padding-right: 15px;
     align-content: center;
+    justify-content: center;
   }
 }

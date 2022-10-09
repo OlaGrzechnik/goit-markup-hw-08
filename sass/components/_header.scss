@@ -1,6 +1,8 @@
 .header {
   border-bottom: 1px solid #ececec;
   max-width: 100%;
+  height: 80px;
+
   &__menu24px {
     width: 24px;
     height: 24px;
@@ -32,8 +34,10 @@
 .top-links {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
+    margin: 0 auto;
+
     &__menu24px {
       display: none;
     }
@@ -43,7 +47,7 @@
     font-size: 16px;
     font-weight: 500;
     gap: 46px;
-    margin-left: 0;
+    margin-left: 93px;
 
     & a {
       color: black;
@@ -64,10 +68,15 @@
   }
   .top {
     margin-left: 0;
+    display: flex;
   }
   .top-links {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    width: 138px;
+    height: 80px;
   }
   .top-links__list {
     list-style-type: none;
@@ -77,10 +86,12 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    justify-content: center;
   }
   .top-links__item {
     display: inline-block;
     font-size: 14px;
+    max-width: 138px;
   }
 
   .top-links a {
@@ -93,102 +104,118 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    display: inline-flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+
+    &__menu24px {
+      display: none;
+    }
+  }
   .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+    margin: 0 auto;
   }
-}
-.top-links__list {
-  list-style-type: none;
-  display: flex;
-  gap: 50px;
-  padding: 0;
-  margin: 0;
-}
-.top-links__item {
-  display: inline-block;
-  font-size: 14px;
-}
 
-.top-links a {
-  color: #757575;
-  text-decoration: none;
-  &:hover {
-    color: $blue;
-    transition: $transition;
-  }
-}
-
-.nav {
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 500;
-  gap: 46px;
-  margin-left: 93px;
-
-  & a {
-    color: black;
-    text-decoration: none;
+  .top-links__list {
+    list-style-type: none;
     display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    &:visited {
-      color: black;
-      text-decoration: none;
-    }
-    &:hover,
-    &:focus {
+    flex-direction: row;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+  .top-links__item {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .top-links a {
+    color: #757575;
+    text-decoration: none;
+    &:hover {
       color: $blue;
       transition: $transition;
     }
   }
-}
 
-.mail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover svg,
-  &:focus svg {
-    fill: $blue;
-    transition: $transition;
+  .nav {
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 46px;
+    margin-left: 93px;
+
+    & a {
+      color: black;
+      text-decoration: none;
+      display: inline-flex;
+      justify-content: space-between;
+      text-align: center;
+      &:visited {
+        color: black;
+        text-decoration: none;
+      }
+      &:hover,
+      &:focus {
+        color: $blue;
+        transition: $transition;
+      }
+    }
   }
 
-  &__envelope-icon {
-    width: 16px;
-    height: 16px;
-    fill: #757575;
-    margin-right: 10px;
+  .mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover svg,
     &:focus svg {
       fill: $blue;
       transition: $transition;
     }
-  }
-}
 
-.phone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover svg,
-  &:focus svg {
-    fill: $blue;
-    transition: $transition;
+    &__envelope-icon {
+      width: 16px;
+      height: 16px;
+      fill: #757575;
+      margin-right: 10px;
+      &:hover svg,
+      &:focus svg {
+        fill: $blue;
+        transition: $transition;
+      }
+    }
   }
 
-  &__phone-icon {
-    height: 16px;
-    width: 10px;
-    fill: #757575;
-    margin-right: 10px;
-    &:hover,
+  .phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover svg,
     &:focus svg {
       fill: $blue;
       transition: $transition;
+    }
+
+    &__phone-icon {
+      height: 16px;
+      width: 10px;
+      fill: #757575;
+      margin-right: 10px;
+      &:hover,
+      &:focus svg {
+        fill: $blue;
+        transition: $transition;
+      }
     }
   }
 }
