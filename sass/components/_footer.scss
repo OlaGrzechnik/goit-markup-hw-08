@@ -108,11 +108,23 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
+    display: flex;
+    justify-content: center;
     &__flex {
-      flex-wrap: nowrap;
-      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__logo-bottom {
+      margin-right: 144px;
     }
   }
+}
+.contact-bottom {
+  padding-bottom: 0;
+  margin-right: 144px;
+}
+.newsletter {
+  padding-top: 0;
 }
 @media screen and (min-width: 1200px) {
   .footer {

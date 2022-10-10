@@ -378,6 +378,9 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+  .intro {
+    height: 600px;
+  }
   .intro__slogan {
     text-align: center;
     color: white;
@@ -947,11 +950,27 @@ main {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
   .footer__flex {
-    flex-wrap: nowrap;
-    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__logo-bottom {
+    margin-right: 144px;
   }
 }
+.contact-bottom {
+  padding-bottom: 0;
+  margin-right: 144px;
+}
+
+.newsletter {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .footer__flex {
     display: inline-flex;
@@ -1148,6 +1167,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__filters {
     flex-wrap: nowrap;
+    justify-content: center;
   }
   .cards {
     display: flex;
