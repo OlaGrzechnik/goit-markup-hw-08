@@ -9,11 +9,13 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 60px;
+    width: 100%;
   }
   .contact-bottom {
     font-style: normal;
     padding-bottom: 60px;
     text-align: center;
+    margin: 0;
 
     &__address {
       font-style: normal;
@@ -51,7 +53,7 @@
 }
 
 .newsletter {
-  padding-top: 60px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +72,7 @@
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 450px;
+    width: 100%;
     height: 50px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6);
@@ -114,8 +116,10 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-    &__logo-bottom {
+
+    &__logo-card {
       margin-right: 144px;
+      justify-content: left;
     }
   }
 }
@@ -125,6 +129,10 @@
 }
 .newsletter {
   padding-top: 0;
+  margin-top: 0;
+  &__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer {

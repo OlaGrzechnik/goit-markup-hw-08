@@ -122,7 +122,9 @@
     padding-bottom: 25px;
     margin: 0 auto;
   }
-
+  .top-links {
+    display: flex;
+  }
   .top-links__list {
     list-style-type: none;
     display: inline-flex;
@@ -140,6 +142,7 @@
   }
 
   .top-links a {
+    display: flex;
     color: #757575;
     text-decoration: none;
     &:hover {
